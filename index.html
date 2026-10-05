@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon PS5 Gamepad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <div id="status">Connect controller, then press any button</div>
+  <div class="controller" aria-label="DualSense controller overlay">
+    <div class="shell"></div>
+    <div class="touchpad"></div>
+    <div class="speaker"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="shoulder l1" data-b="4">L1</div><div class="shoulder r1" data-b="5">R1</div>
+    <div class="trigger l2" data-b="6">L2</div><div class="trigger r2" data-b="7">R2</div>
+    <div class="small create" data-b="8">◫</div><div class="small options" data-b="9">≡</div>
+    <div class="ps" data-b="16">PS</div>
+
+    <div class="dpad">
+      <div class="d up" data-b="12">▲</div><div class="d right" data-b="15">▶</div>
+      <div class="d down" data-b="13">▼</div><div class="d left" data-b="14">◀</div>
+    </div>
+
+    <div class="faces">
+      <div class="face triangle" data-b="3">△</div>
+      <div class="face circle" data-b="1">○</div>
+      <div class="face cross" data-b="0">×</div>
+      <div class="face square" data-b="2">□</div>
+    </div>
+
+    <div class="stick-zone ls"><div class="stick" id="ls" data-b="10"></div></div>
+    <div class="stick-zone rs"><div class="stick" id="rs" data-b="11"></div></div>
+  </div>
+</main>
+<script src="gamepad.js"></script>
+</body>
+</html>
